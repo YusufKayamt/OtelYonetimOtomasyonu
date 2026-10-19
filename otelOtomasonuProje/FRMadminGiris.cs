@@ -38,7 +38,7 @@ namespace otelOtomasonuProje
             string kullaniciAdi = textKullaniciAdi.Text;
             string sifre = textSifre.Text;
 
-            if (kullaniciAdi == "admin" && sifre == "123456")
+            if (Veritabani.YoneticiDogrula(kullaniciAdi, sifre))
             {
                 FRManaForm sayfa = new FRManaForm();
                 sayfa.Show(); 

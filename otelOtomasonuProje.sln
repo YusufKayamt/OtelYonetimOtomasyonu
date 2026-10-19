@@ -5,11 +5,6 @@ VisualStudioVersion = 15.0.35213.121
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "otelOtomasyonuProje", "otelOtomasonuProje\otelOtomasyonuProje.csproj", "{200DBB2F-57F5-40E7-95C5-61CF98350D45}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5144E7B2-CCFD-4871-AF16-4768A2A99FFB}"
-	ProjectSection(SolutionItems) = preProject
-		App.config = App.config
-	EndProjectSection
-EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{DA77B2D8-CC2D-411F-B45F-380590367BCA}"
 EndProject
 Global

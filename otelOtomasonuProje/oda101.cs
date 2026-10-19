@@ -18,7 +18,7 @@ namespace otelOtomasonuProje
             InitializeComponent();
         }
 
-        SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-0V1D2BT\SQLEXPRESS;Initial Catalog=YMKotelOtomasyonu;Integrated Security=True");
+        SqlConnection baglanti = Veritabani.BaglantiOlustur();
 
 
         private void label2_Click(object sender, EventArgs e)
@@ -73,7 +73,7 @@ namespace otelOtomasonuProje
 
         private void BTNOda101Kaydet_Click(object sender, EventArgs e)
         {
-            SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-0V1D2BT\SQLEXPRESS;Initial Catalog=YMKotelOtomasyonu;Integrated Security=True");
+            SqlConnection baglanti = Veritabani.BaglantiOlustur();
 
             try
             {
@@ -125,7 +125,7 @@ namespace otelOtomasonuProje
 
         private void BTNoda101Gor_Click(object sender, EventArgs e)
         {
-            SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-0V1D2BT\SQLEXPRESS;Initial Catalog=YMKotelOtomasyonu;Integrated Security=True");
+            SqlConnection baglanti = Veritabani.BaglantiOlustur();
 
             try
             {

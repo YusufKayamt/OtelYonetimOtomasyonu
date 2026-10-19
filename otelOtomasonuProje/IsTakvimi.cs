@@ -19,7 +19,7 @@ namespace otelOtomasonuProje
             InitializeComponent();
         }
 
-        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-0V1D2BT\\SQLEXPRESS;Initial Catalog=YMKotelOtomasyonu;Integrated Security=True");
+        SqlConnection baglanti = Veritabani.BaglantiOlustur();
 
 
    
@@ -71,7 +71,8 @@ namespace otelOtomasonuProje
             try
             {
                 baglanti.Open();
-                SqlCommand komut = new SqlCommand("SELECT * FROM IsTakvimi WHERE YapılacakIs LIKE '%" + textIsArama.Text + "%'", baglanti);
+                SqlCommand komut = new SqlCommand("SELECT * FROM IsTakvimi WHERE YapılacakIs LIKE @Arama", baglanti);
+                komut.Parameters.AddWithValue("@Arama", "%" + textIsArama.Text + "%");
                 SqlDataReader oku = komut.ExecuteReader();
 
                 while (oku.Read())

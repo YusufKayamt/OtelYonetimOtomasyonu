@@ -19,7 +19,7 @@ namespace otelOtomasonuProje
             InitializeComponent();
         }
 
-        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-0V1D2BT\\SQLEXPRESS;Initial Catalog=YMKotelOtomasyonu;Integrated Security=True");
+        SqlConnection baglanti = Veritabani.BaglantiOlustur();
         private void oda101_Click(object sender, EventArgs e)
         {
             comboBoxEdit2.Text = "101";
